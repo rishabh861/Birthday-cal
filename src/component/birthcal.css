@@ -1,0 +1,276 @@
+
+
+
+   html,
+   button,
+   input,
+   select,
+   textarea {
+     color: #222;
+   }
+   
+   html {
+     font-size: 1em;
+     line-height: 1.5;
+     background: #eaf0f2;
+     background: #27303a;
+   }
+   
+   body {
+     font-family: 'Open Sans', sans-serif;
+   }
+   
+   ul {
+     padding: 0 0 0 30px;
+   }
+   
+   h4 {
+     margin: 1em 0;
+   }
+   
+   p {
+     margin: 0 0 1em;
+   }
+   
+   h4+p {
+     margin-top: -.5em;
+   }
+   
+   p+h4 {
+     margin-top: 2em;
+   }
+   
+   
+  
+   
+   .clearfix:before,
+   .clearfix:after {
+     content: " ";
+     /* 1 */
+     display: table;
+     /* 2 */
+   }
+   
+   .clearfix:after {
+     clear: both;
+   }
+   
+   label {
+     display: block;
+     font-weight: 600;
+     margin-bottom: 6px;
+   }
+   
+   .border-line {
+     height: 1px;
+     border: none;
+     margin: 36px auto;
+     background: -moz-linear-gradient(left, rgba(117, 136, 151, 0) 0%, rgba(117, 136, 151, 1) 50%, rgba(117, 136, 151, 0) 100%);
+     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(117, 136, 151, 0)), color-stop(50%, rgba(117, 136, 151, 0.3)), color-stop(100%, rgba(117, 136, 151, 0)));
+     background: -webkit-linear-gradient(left, rgba(117, 136, 151, 0) 0%, rgba(117, 136, 151, 0.3) 50%, rgba(117, 136, 151, 0) 100%);
+     background: -o-linear-gradient(left, rgba(117, 136, 151, 0) 0%, rgba(117, 136, 151, 0.3) 50%, rgba(117, 136, 151, 0) 100%);
+     background: -ms-linear-gradient(left, rgba(117, 136, 151, 0) 0%, rgba(117, 136, 151, 0.3) 50%, rgba(117, 136, 151, 0) 100%);
+     background: linear-gradient(to right, rgba(117, 136, 151, 0) 0%, rgba(117, 136, 151, 0.3) 50%, rgba(117, 136, 151, 0) 100%);
+   }
+   
+   code,
+   pre {
+     font-size: 12px;
+     font-family: 'Source Code Pro', monospace;
+     background: #f5fafc;
+     padding: 1px 6px;
+   }
+   
+   .faq,
+   .app {
+     width: 1024px;
+     margin: 0 auto;
+     background: #eaf0f2;
+   }
+   
+   .faq__content,
+   .app__content {
+     padding: 24px 24px 120px;
+     color: #5b6a76;
+     overflow: auto;
+   }
+   
+   .faq__header,
+   .app__header {
+     margin: 0;
+     padding: 24px 38px;
+     background: #1789ec;
+     color: #ffffff;
+     font-weight: 300;
+   
+   }
+   
+   .intro {
+     display: -webkit-flex;
+     display: flex;
+     font-size: 14px;
+   }
+   
+   .intro__task {
+     -webkit-flex: 5;
+     flex: 5;
+     margin: 24px;
+     padding: 12px 24px;
+     background: #ffffff;
+     border: 1px solid rgba(0, 0, 0, 0.1);
+   }
+   
+   .intro__example {
+     margin-top: 12px;
+     width: 100%;
+   }
+   
+   .intro__helpers {
+     margin-top: 24px;
+     -webkit-flex: 2;
+     flex: 2;
+     font-size: 12px;
+     line-height: 1.5;
+   }
+   
+   .intro__helpers li {
+     margin-bottom: 24px;
+   }
+   
+   .faq__border,
+   .app__border {
+     max-width: 80%;
+   }
+   
+   .cal__title {
+     margin: 0 0 48px;
+     padding-top: 54px;
+     font-weight: 300;
+     text-align: center;
+   }
+   
+   .faq__question {
+     margin-bottom: 0;
+   }
+
+   .calendar-container {
+     background: #fff;
+     border: 2px dashed rgba(0, 0, 0, .2);
+     border-radius: 3px;
+     padding: 12px;
+     margin-bottom: 36px;
+     min-height: 160px;
+     text-align: center;
+     color: rgba(0, 0, 0, .5);
+     font-size: .75em;
+   }
+   
+   .app__inputs {
+     display: -webkit-flex;
+     display: flex;
+   }
+   
+   .app__txt {
+     font-family: 'Source Code Pro', monospace;
+     border: 1px solid #ccd1d3;
+     border-radius: 3px;
+   }
+   
+   .app__txt {
+     -webkit-flex: 3;
+     flex: 3;
+     font-size: 12px;
+     font-family: 'Source Code Pro', monospace;
+     border: 1px solid #ccd1d3;
+     border-radius: 3px;
+     margin: 0 24px 0 0;
+     padding: 12px;
+     width: 60%;
+     height: 300px;
+   }
+   
+   .app__actions {
+     -webkit-flex: 2;
+     flex: 2;
+     margin-left: 24px;
+   }
+   
+   .container {
+     display: grid;
+     grid-template-columns: repeat(7, 120px);
+     gap: 16px;
+     padding: 10px;
+    text-align: right;
+   }
+   
+   .day{
+     background-color:#604b8f;
+     padding:7px;
+     /* color: #eaf0f2;   */
+       border-top: 1px solid #8238f8 ;
+       border-right: 1px solid #8238f8;
+       border-left: 1px solid #8238f8;
+      border-top-right-radius: 3px; 
+      border-top-left-radius: 3px;
+      color:yellow;
+   }
+   
+   
+   .flex{
+    display: flex;
+    flex-wrap:wrap;
+    align-content: flex-start;
+    background:white;
+    border-bottom: 1px solid ;
+    border-right: 1px solid;
+    border-left: 1px solid
+   }
+   
+   .init{
+     display: grid;
+    background:white;
+    border-bottom: 1px solid ;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    align-content: flex-start;
+    /* color:black; */
+   }
+   
+   .init>div{
+    display:flex;
+     /* color: #eaf0f2; */
+     align-items: center;
+     justify-content: center;
+      color:black;
+      background-color:cornflowerblue;
+   }
+    
+   
+   .init div:nth-child(2n+0) {
+    background-color: rgb(155, 83, 122); 
+  }  
+  
+  .init div:nth-child(2n+1) {
+    background-color: rgb(13, 99, 80); 
+  }  
+  .init div:nth-child(2n+2) {
+    background-color: rgb(53, 39, 185); 
+  }  
+  .init div:nth-child(2n+3) {
+    background-color: rgb(56, 10, 15); 
+  }  
+  .init div:nth-child(2n+4) {
+    background-color: rgb(97, 123, 211); 
+  }  
+  .init div:nth-child(2n+5) {
+    background-color: rgb(114, 33, 124); 
+  }  
+  .init div:nth-child(2n+6) {
+    background-color: rgba(51, 19, 19, 0.55); 
+  }  
+  
+   *{
+     box-sizing: border-box;
+   }
+   
+   
